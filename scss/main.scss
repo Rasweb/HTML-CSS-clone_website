@@ -1,0 +1,217 @@
+$color: white;
+
+html {
+  font-size: 12pt;
+}
+
+footer {
+  background-color: black;
+  color: $color;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 14pt;
+}
+
+// Navigations delen.
+.hamburger1 {
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  position: absolute;
+  margin: 10px;
+  margin-left: 80%;
+}
+
+.hamburger1 div {
+  background-color: $color;
+  position: relative;
+  top: 20px;
+  width: 40px;
+  height: 5px;
+  margin-top: 8px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 100px;
+}
+
+/* Menu */
+.menu1 {
+  width: 100%;
+  background-color: grey;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+  margin-top: 20px;
+}
+
+.menu1 a:last-child {
+  margin-bottom: 90px;
+}
+
+// "Start" delen.
+.hero-cont {
+  display: flex;
+  flex: calc(40%);
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.hero-image {
+  height: 100vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color;
+}
+button {
+  font-size: 14pt;
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.link1 {
+  color: $color;
+  text-decoration: none;
+}
+
+// "Om" delen.
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $color;
+  align-items: center;
+}
+
+.flex-container > div {
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+}
+
+.flex-container > div:nth-of-type(odd) {
+  border-radius: 50%;
+}
+
+.flex-container > div:nth-of-type(even) {
+  width: 70%;
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  flex: calc(40%);
+  border-radius: 50%;
+  background-repeat: repeat;
+}
+
+.profile img {
+  width: 100%;
+}
+
+// "Kontakt" delen.
+.fa {
+  background-color: black;
+  color: $color;
+  font-size: 20pt;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    color: green;
+  }
+
+  .hamburger1 {
+    display: none;
+  }
+
+  .hamburger1 div {
+    width: 100px;
+    position: absolute;
+  }
+
+  .menu1 {
+    overflow: visible;
+    display: grid;
+    text-align: right;
+    grid-template-columns: 80px 80px 140px;
+    font-size: 20pt;
+    justify-content: right;
+  }
+
+  .menu1 a:first-child {
+    margin-top: 0px;
+  }
+
+  .menu1 a:last-child {
+    margin-right: 10px;
+  }
+
+  .link1 {
+    grid-row: 1;
+  }
+}
+
+html {
+  font-size: 13pt;
+}
+
+@media screen and (min-width: 1256px) {
+  h1 {
+    color: hotpink;
+  }
+}

@@ -77,22 +77,15 @@ html {
   margin: 0;
 }
 
-// .menu1 a:last-child {
-//   margin-bottom: 90px;
-// }
-
 // "Start" delen.
-.hero-cont {
-  display: flex;
-  flex: calc(40%);
-}
 
 .hero-image img {
   width: 100%;
+  object-fit: cover;
 }
 
 .hero-image {
-  height: 100vh;
+  height: 92vh;
   display: flex;
   // background-image: url("image/hero-forest-image.jpg");
   background-size: cover;
@@ -103,16 +96,17 @@ html {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: $color;
 }
 button {
-  font-size: 14pt;
+  font-size: 16pt;
   position: absolute;
-  bottom: 20%;
-  left: 40%;
+  bottom: 15%;
+  left: 45%;
+  border-radius: 50%;
 }
 
 a {

@@ -4,105 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
     <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- Boostrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-
     <title>Document</title>
   </head>
   <body>
-    <!-- Navigations delen. -->
-    <section class="p-menu1">
-      <nav id="navbar" class="navigation" role="navigation">
-        <input id="toggle1" type="checkbox" />
-        <label class="hamburger1" for="toggle1">
-          <div class="top"></div>
-          <div class="meat"></div>
-          <div class="bottom"></div>
-        </label>
-
-        <nav class="menu1">
-          <a class="link1" href="">Hem</a>
-          <a class="link1" href="#about">Om</a>
-          <a class="link1" href="#K">Kontakt</a>
-        </nav>
+    <header class="hero">
+      <!-- Navigation part. -->
+      <input id="toggle" type="checkbox" />
+      <nav>
+        <div class="hamburgerCont">
+          <label for="toggle" class="hamburger">
+            <div class="nav top"></div>
+            <div class="nav mid"></div>
+            <div class="nav bott"></div>
+          </label>
+        </div>
+        <div class="navLinks">
+          <a href="">Hem</a>
+          <a href="#about">Om</a>
+          <a href="#contact">Kontakt</a>
+        </div>
       </nav>
-    </section>
-
-    <!-- "Start" delen. -->
-    <div class="hero-image">
-      <img src="image/hero-forest-image.jpg" alt="forest" />
-      <div class="hero-text">
-        <h1>Welcome to nature</h1>
+      <!-- Start text -->
+      <div class="textCont">
+        <h2>Welcome to nature</h2>
         <p>A journey through time and sheep</p>
         <p>To see how ...cotton ... is mage, made i mean...</p>
       </div>
-    </div>
-    <div class="arr">
-      <a href="#about"><i class="bi bi-arrow-down-circle"></i></a>
-    </div>
+      <a href="#about" class="arrowDown"
+        ><i class="fa fa-arrow-circle-down"></i
+      ></a>
+    </header>
 
-    <!-- "Om" delen. -->
-    <h2 id="about">Träffa laget</h2>
-    <div class="box">
-      <div>
-        <div><h3>Rakib</h3></div>
-        <div><img src="image/Rakib_Square.png" alt="A pitcure of Rakib" /></div>
+    <!-- About -->
+    <div class="aboutCont">
+      <h2 id="about">Träffa laget</h2>
+      <div class="box">
         <div>
-          <p class="box-text">
-            <i class="fa fa-quote-right" aria-hidden="true"></i> Rakib är vår
-            vassaste node-utvecklare och håller ständigt ett öga på nya tekniker
-          </p>
+          <div><h3>Rakib</h3></div>
+          <div>
+            <img src="image/Rakib_Square.png" alt="A pitcure of Rakib" />
+          </div>
+          <div>
+            <p class="box-text lineHeight1">
+              <i class="fa fa-quote-right" aria-hidden="true"></i> Rakib är vår
+              vassaste node-utvecklare och håller ständigt ett öga på nya
+              tekniker
+            </p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div><h3>Alexandra</h3></div>
-        <div><img src="image/Alexandra_Square.png" alt="" /></div>
-        <div class="test-s">
-          <p class="box-text">
-            <i class="fa fa-quote-right" aria-hidden="true"></i> Alexandra
-            håller reda på alla överallt och ser till att det flyter
-            <br /><br />
-          </p>
-        </div>
-      </div>
-      <div>
-        <div><h3>Lasse</h3></div>
-        <div><img src="image/NoPerson_Square.png" alt="" /></div>
         <div>
-          <p class="box-text">
-            <i class="fa fa-quote-right" aria-hidden="true"></i>Gör övriga
-            saker... mestadels
-            <br />
-            <br />
-          </p>
+          <div><h3>Alexandra</h3></div>
+          <div><img src="image/Alexandra_Square.png" alt="" /></div>
+          <div class="test-s">
+            <p class="box-text lineHeight2">
+              <i class="fa fa-quote-right" aria-hidden="true"></i> Alexandra
+              håller reda på alla överallt och ser till att det flyter
+              <br /><br />
+            </p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div><h3>Sebastian</h3></div>
-        <div><img src="image/Sebastian_Square.png" alt="" /></div>
         <div>
-          <p class="box-text">
-            <i class="fa fa-quote-right" aria-hidden="true"></i>
-            En av våra utbildare som har stor erfarenhet av ganska många saker
-          </p>
+          <div><h3>Lasse</h3></div>
+          <div><img src="image/NoPerson_Square.png" alt="" /></div>
+          <div>
+            <p class="box-text lineHeight3">
+              <i class="fa fa-quote-right" aria-hidden="true"></i>Gör övriga
+              saker... mestadels
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
+        <div>
+          <div><h3>Sebastian</h3></div>
+          <div><img src="image/Sebastian_Square.png" alt="" /></div>
+          <div>
+            <p class="box-text lineHeight4">
+              <i class="fa fa-quote-right" aria-hidden="true"></i>
+              En av våra utbildare som har stor erfarenhet av ganska många saker
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <div class="arrow">
-      <a href="#Ko"><i class="bi bi-arrow-down-circle"></i> </a>
+      <a href="#contact"><i class="fa fa-arrow-down-circle"></i> </a>
     </div>
-    <!-- "Kontakt" delen -->
+    <!-- Contact -->
     <div class="footer">
-      <div id="Ko">
+      <div>
         <ul class="ko-text1">
           <li>Tegel Consulting AB</li>
           <li>Agatavägen 18</li>
@@ -118,23 +114,23 @@
       <div>
         <ul class="social-li">
           <li>
-            <i class="bi bi-instagram">Instagram</i>
+            <i class="fa fa-instagram">Instagram</i>
           </li>
         </ul>
 
         <ul class="social-li">
           <li>
-            <i class="bi bi-twitter">Twitter</i>
+            <i class="fa fa-twitter">Twitter</i>
           </li>
         </ul>
 
         <ul class="social-li">
           <li>
-            <i class="bi bi-facebook">Facebook</i>
+            <i class="fa fa-facebook">Facebook</i>
           </li>
         </ul>
       </div>
-      <p id="K"></p>
+      <p id="contact"></p>
     </div>
   </body>
 </html>

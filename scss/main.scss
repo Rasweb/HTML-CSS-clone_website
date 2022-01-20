@@ -160,7 +160,7 @@ nav {
 
 // !About
 
-// "Kontakt" delen.
+// Contact.
 .footer {
   background-color: black;
   color: $color;
@@ -184,14 +184,23 @@ nav {
   margin-right: 4em;
 }
 
-.ko-text1 {
+.contactText1 {
   list-style: none;
   margin-right: 2em;
+  line-height: 30px;
 }
 
-.ko-text2 {
+.contactText2 {
   list-style: none;
   text-align: left;
+  line-height: 30px;
+}
+
+.marginRight1 {
+  margin-right: 50px;
+}
+
+.marginRight2 {
 }
 
 @media screen and (min-width: 768px) {
@@ -258,6 +267,7 @@ nav {
   .footer {
     font-size: 1.2rem;
     flex-direction: row;
+    justify-content: center;
   }
 
   .footer > div {

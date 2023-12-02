@@ -43,5 +43,3 @@ npm run sass
 ### Author
 
 [Github](https://github.com/Rasweb)
-
-[Website](https://rasweb.one/)
